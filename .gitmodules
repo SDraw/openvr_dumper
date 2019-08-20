@@ -1,9 +1,6 @@
-[submodule "openvr"]
-	path = openvr
-	url = ../../ValveSoftware/openvr.git
 [submodule "vendor/openvr"]
 	path = vendor/openvr
-	url = ../../ValveSoftware/openvr.git
+	url = https://github.com/ValveSoftware/openvr.git
 [submodule "vendor/pugixml"]
 	path = vendor/pugixml
-	url = ../../zeux/pugixml.git
+	url = https://github.com/zeux/pugixml.git
