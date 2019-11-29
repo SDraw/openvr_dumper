@@ -1,4 +1,4 @@
-Simple dumper of OpenVR controllers' properties.
+Simple dumper of OpenVR devices' properties.
 
 ### Usage
 - Be sure that SteamVR is launched and all of your VR devices are active and trackable.
