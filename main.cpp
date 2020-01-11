@@ -197,7 +197,6 @@ int main(int argc, const char* argv[])
                     l_storedProperties.emplace_back(vr::Prop_ExpectedControllerType_String, "ExpectedControllerType", PT_String);
                     l_storedProperties.emplace_back(vr::Prop_HmdTrackingStyle_Int32, "HmdTrackingStyle", PT_Int32);
                     l_storedProperties.emplace_back(vr::Prop_DriverProvidedChaperoneVisibility_Bool, "DriverProvidedChaperoneVisibility", PT_Bool);
-                    l_storedProperties.emplace_back(vr::Prop_HmdProvidesDisplaySettings_Bool, "HmdProvidesDisplaySettings", PT_Bool);
                     //l_storedProperties.emplace_back(vr::Prop_DisplayAvailableFrameRates_Float_Array, "DisplayAvailableFrameRates_Float_Array", ?);
                     l_storedProperties.emplace_back(vr::Prop_DisplaySupportsMultipleFramerates_Bool, "DisplaySupportsMultipleFramerates", PT_Bool);
                     l_storedProperties.emplace_back(vr::Prop_DisplayColorMultLeft_Vector3, "DisplayColorMultLeft", PT_Vector3);
