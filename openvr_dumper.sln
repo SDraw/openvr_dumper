@@ -7,20 +7,20 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openvr_dumper", "openvr_dum
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
-		Release|Win32 = Release|Win32
+		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Debug|Win32.ActiveCfg = Debug|Win32
-		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Debug|Win32.Build.0 = Debug|Win32
 		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Debug|x64.ActiveCfg = Debug|x64
 		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Debug|x64.Build.0 = Debug|x64
-		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Release|Win32.ActiveCfg = Release|Win32
-		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Release|Win32.Build.0 = Release|Win32
+		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Debug|x86.Build.0 = Debug|Win32
 		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Release|x64.ActiveCfg = Release|x64
 		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Release|x64.Build.0 = Release|x64
+		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Release|x86.ActiveCfg = Release|Win32
+		{DBCF13C9-E001-48D2-99C1-86D0EC3E802F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
