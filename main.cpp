@@ -53,7 +53,7 @@ int main(int argc, const char* argv[])
     {
         std::cout << "OpenVR initialized" << std::endl;
 
-        auto l_shortDelay = std::chrono::seconds(1U);
+        const auto l_shortDelay = std::chrono::seconds(1U);
         std::cout << "Activate your devices in period of 3 seconds ";
         for(size_t i = 0U; i < 3U; i++)
         {
@@ -294,7 +294,7 @@ int main(int argc, const char* argv[])
                         case PT_String:
                         {
                             char l_propertyString[vr::k_unMaxPropertyStringSize];
-                            uint32_t l_length = l_vrSystem->GetStringTrackedDeviceProperty(l_devices[i], l_storedProperty.m_vrProperty, l_propertyString, vr::k_unMaxPropertyStringSize, &l_propertyError);
+                            const uint32_t l_length = l_vrSystem->GetStringTrackedDeviceProperty(l_devices[i], l_storedProperty.m_vrProperty, l_propertyString, vr::k_unMaxPropertyStringSize, &l_propertyError);
                             if(l_length > 0U) l_storedProperty.m_string.assign(l_propertyString, l_length);
                         } break;
                         case PT_Int32:
