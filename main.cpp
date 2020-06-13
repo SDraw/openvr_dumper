@@ -201,7 +201,6 @@ int main(int argc, const char* argv[])
                     l_storedProperties.emplace_back(vr::Prop_DisplaySupportsMultipleFramerates_Bool, "DisplaySupportsMultipleFramerates", PT_Bool);
                     l_storedProperties.emplace_back(vr::Prop_DisplayColorMultLeft_Vector3, "DisplayColorMultLeft", PT_Vector3);
                     l_storedProperties.emplace_back(vr::Prop_DisplayColorMultRight_Vector3, "DisplayColorMultRight", PT_Vector3);
-                    l_storedProperties.emplace_back(vr::Prop_DashboardLayoutPathName_String, "DashboardLayoutPathName", PT_String);
                     l_storedProperties.emplace_back(vr::Prop_DashboardScale_Float, "DashboardScale", PT_Float);
                     l_storedProperties.emplace_back(vr::Prop_IpdUIRangeMinMeters_Float, "IpdUIRangeMinMeters", PT_Float);
                     l_storedProperties.emplace_back(vr::Prop_IpdUIRangeMaxMeters_Float, "IpdUIRangeMaxMeters", PT_Float);
