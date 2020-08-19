@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="openvr_widgets" />
+		<Option platforms="Unix;" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Unix;" />
+				<Option output="bin/linux64/openvr_widgets_d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/linux64/" />
+				<Option object_output="objs/linux64/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-Winvalid-pch" />
+					<Add option="-fms-extensions" />
+					<Add directory="./" />
+					<Add directory="vendor/glm" />
+					<Add directory="vendor/openvr/headers" />
+					<Add directory="vendor/pugixml/src" />
+					<Add directory="vendor/screen_capture_lite/include" />
+					<Add directory="vendor/sfml/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add option="-Wl,-rpath=./" />
+					<Add library="screen_capture_lite" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="openvr_api" />
+					<Add library="udev" />
+					<Add library="pthread" />
+					<Add library="GL" />
+					<Add library="X11" />
+					<Add library="Xi" />
+					<Add library="Xrandr" />
+					<Add library="Xinerama" />
+					<Add library="Xext" />
+					<Add library="Xfixes" />
+					<Add library="freetype" />
+					<Add directory="vendor/openvr/lib/linux64" />
+					<Add directory="vendor/screen_capture_lite/lib/linux64" />
+					<Add directory="vendor/sfml/lib/linux64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Unix;" />
+				<Option output="bin/linux64/openvr_widgets" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/linux64/" />
+				<Option object_output="objs/linux64/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-m64" />
+					<Add option="-Winvalid-pch" />
+					<Add option="-fms-extensions" />
+					<Add directory="./" />
+					<Add directory="vendor/glm" />
+					<Add directory="vendor/openvr/headers" />
+					<Add directory="vendor/pugixml/src" />
+					<Add directory="vendor/screen_capture_lite/include" />
+					<Add directory="vendor/sfml/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+					<Add option="-Wl,-rpath=./" />
+					<Add library="screen_capture_lite" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="openvr_api" />
+					<Add library="udev" />
+					<Add library="pthread" />
+					<Add library="GL" />
+					<Add library="X11" />
+					<Add library="Xi" />
+					<Add library="Xrandr" />
+					<Add library="Xinerama" />
+					<Add library="Xext" />
+					<Add library="Xfixes" />
+					<Add library="freetype" />
+					<Add directory="vendor/openvr/lib/linux64" />
+					<Add directory="vendor/screen_capture_lite/lib/linux64" />
+					<Add directory="vendor/sfml/lib/linux64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../repos/openvr_widgets/vendor/pugixml/src/pugixml.cpp" />
+		<Unit filename="Core/Core.cpp" />
+		<Unit filename="Core/Core.h" />
+		<Unit filename="Core/GlobalSettings.cpp" />
+		<Unit filename="Core/GlobalSettings.h" />
+		<Unit filename="Core/VRTransform.cpp" />
+		<Unit filename="Core/VRTransform.h" />
+		<Unit filename="Gui/GuiButton.cpp" />
+		<Unit filename="Gui/GuiButton.h" />
+		<Unit filename="Gui/GuiElement.cpp" />
+		<Unit filename="Gui/GuiElement.h" />
+		<Unit filename="Gui/GuiImage.cpp" />
+		<Unit filename="Gui/GuiImage.h" />
+		<Unit filename="Gui/GuiStructures.h" />
+		<Unit filename="Gui/GuiSystem.cpp" />
+		<Unit filename="Gui/GuiSystem.h" />
+		<Unit filename="Gui/GuiText.cpp" />
+		<Unit filename="Gui/GuiText.h" />
+		<Unit filename="Managers/ConfigManager.cpp" />
+		<Unit filename="Managers/ConfigManager.h" />
+		<Unit filename="Managers/WidgetManager.cpp" />
+		<Unit filename="Managers/WidgetManager.h" />
+		<Unit filename="Utils/GlobalConstants.cpp" />
+		<Unit filename="Utils/GlobalStructures.h" />
+		<Unit filename="Utils/TexturePooler.cpp" />
+		<Unit filename="Utils/TexturePooler.h" />
+		<Unit filename="Utils/Transformation.cpp" />
+		<Unit filename="Utils/Transformation.h" />
+		<Unit filename="Utils/Utils.cpp" />
+		<Unit filename="Utils/Utils.h" />
+		<Unit filename="Utils/WindowGrabber.cpp" />
+		<Unit filename="Utils/WindowGrabber.h" />
+		<Unit filename="Widgets/Widget.cpp" />
+		<Unit filename="Widgets/Widget.h" />
+		<Unit filename="Widgets/WidgetKeyboard.cpp" />
+		<Unit filename="Widgets/WidgetKeyboard.h" />
+		<Unit filename="Widgets/WidgetStats.cpp" />
+		<Unit filename="Widgets/WidgetStats.h" />
+		<Unit filename="Widgets/WidgetWindowCapture.cpp" />
+		<Unit filename="Widgets/WidgetWindowCapture.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h">
+			<Option compile="1" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
