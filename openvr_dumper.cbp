@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="openvr_dumper" />
+		<Option platforms="Unix;" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Unix;" />
+				<Option output="bin/linux64/openvr_dumper_d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/linux64/" />
+				<Option object_output="objs/linux64/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-Winvalid-pch" />
+					<Add directory="./" />
+					<Add directory="vendor/pugixml/src" />
+					<Add directory="vendor/openvr/headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add option="-Wl,-rpath=./" />
+					<Add library="openvr_api" />
+					<Add directory="vendor/openvr/lib/linux64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Unix;" />
+				<Option output="bin/linux64/openvr_dumper" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/linux64/" />
+				<Option object_output="objs/linux64/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Winvalid-pch" />
+					<Add directory="./" />
+					<Add directory="vendor/pugixml/src" />
+					<Add directory="vendor/openvr/headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Wl,-rpath=./" />
+					<Add library="openvr_api" />
+					<Add directory="vendor/openvr/lib/linux64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="vendor/pugixml/src/pugixml.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h">
+			<Option compile="1" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
