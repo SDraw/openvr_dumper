@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-const std::map<vr::PropertyTypeTag_t, const char*> g_PropertyTypeTagName
+const std::map<vr::PropertyTypeTag_t, const char*> g_propertyTypeTagName
 {
     { vr::k_unInvalidPropertyTag, "invalid" },
     { vr::k_unFloatPropertyTag, "float" },
@@ -29,7 +29,7 @@ const std::map<vr::PropertyTypeTag_t, const char*> g_PropertyTypeTagName
     { vr::k_unOpenVRInternalReserved_Start, "openvr_internal_reserved_start" },
     { vr::k_unOpenVRInternalReserved_End, "openvr_internal_reserved_end" }
 };
-const char* g_DeviceTypeName[vr::TrackedDeviceClass_Max]
+const char* g_deviceTypeName[vr::TrackedDeviceClass_Max]
 {
     "invalid", "hmd", "controller", "generic_tracker", "tracking_reference", "display_redirect"
 };
@@ -291,7 +291,7 @@ int main()
                 l_deviceId.set_value(l_devices[i]);
 
                 pugi::xml_attribute l_deviceType = l_deviceNode.append_attribute("type");
-                l_deviceType.set_value(g_DeviceTypeName[static_cast<size_t>(l_deviceClass)]);
+                l_deviceType.set_value(g_deviceTypeName[static_cast<size_t>(l_deviceClass)]);
 
                 for(auto &l_storedProperty : l_storedProperties)
                 {
@@ -336,7 +336,7 @@ int main()
                         l_propertyName.set_value(l_storedProperty.m_propertyName);
 
                         pugi::xml_attribute l_typeAttribute = l_propertyNode.append_attribute("type");
-                        l_typeAttribute.set_value(g_PropertyTypeTagName.find(l_storedProperty.m_propertyTypeTag)->second);
+                        l_typeAttribute.set_value(g_propertyTypeTagName.find(l_storedProperty.m_propertyTypeTag)->second);
 
                         pugi::xml_attribute l_valueAttribute = l_propertyNode.append_attribute("value");
                         switch(l_storedProperty.m_propertyTypeTag)
